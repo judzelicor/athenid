@@ -6,3 +6,6 @@
 
 # Next
 **.next/
+
+# Environment variables
+.env.local
