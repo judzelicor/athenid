@@ -1,20 +1,15 @@
-// core styles are required for all packages
-import '@mantine/core/styles.css';
-import { createTheme, MantineProvider } from '@mantine/core';
+'use client';
 
-// other css files are required only if
-// you are using components from the corresponding package
-// import '@mantine/dates/styles.css';
-// import '@mantine/dropzone/styles.css';
-// import '@mantine/code-highlight/styles.css';
-// ...
 
 export default function MyApp({ Component, pageProps }) {
+    const theme = {
+        backgroundColor: '#2e2e2e',
+        color: '#ccc'
+    }
+
     return (
         <>
-            <MantineProvider>
-                <Component {...pageProps} />
-            </MantineProvider>
+            <Component {...pageProps} />
         </>
     )
   }

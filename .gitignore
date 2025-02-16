@@ -9,3 +9,20 @@
 
 # Environment variables
 .env.local
+
+# Conda environment
+services/bin
+services/conda-meta
+services/etc
+services/lib
+services/man
+services/include
+services/share
+services/ssl
+__pycache__/
+
+# Test Materials
+test-materials/
+
+# Server Uploads
+**/uploads

@@ -398,3 +398,7 @@ button {
     border: none;
     padding: 0;
 }
+
+p {
+    margin: 0;
+}

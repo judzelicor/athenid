@@ -1,0 +1,1 @@
+You need to install poppler and tesseract then install the python libraries

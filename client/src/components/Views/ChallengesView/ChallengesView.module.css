@@ -1,0 +1,59 @@
+.modal-window {
+    background-color: #f2f1f7;
+    padding: 50px;
+    width: 80vw;
+    position: fixed;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 1rem;
+    opacity: 0;
+    z-index: 999;
+}
+
+.weeklychallenges-card-dif-icon {
+    width: 16px;
+}
+
+.weeklychallenges-card-dif-level {
+    text-transform: capitalize;
+}
+
+.challenge-card-interested-btn {
+    background-color: #005bbf;
+    color: #f2f1f7;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    transition: transform 50ms ease-in-out;
+}
+
+.challenge-card-interested-btn:active {
+    transform: scale(0.9);
+}
+
+.modal-bg-filter {
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    backdrop-filter: blur(3px);
+    background: linear-gradient(0deg, rgba(33,37,41,1) 0%, rgba(33,37,41,0) 100%);
+    opacity: 0;
+}
+
+.modal-window-pri-btn {
+    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #00c6ff, #0072ff);
+    border-radius: 9px;
+    color: #f2f1f7;
+    padding: 0.85rem 2rem;
+}
+
+.modal-window-sec-btn {
+    border: 1px solid #ccc;
+    border-radius: 9px;
+    padding: 0.85rem 2rem;
+}

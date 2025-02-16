@@ -1,0 +1,61 @@
+#__next {
+    background-color: #f8f9fa;
+}
+
+body,
+html {
+    background-color: #f8f9fa;
+    color: #212529;
+}
+
+img {
+    display: block;
+    height: 100%;
+    object-fit: cover;
+    width: 100%;
+}
+
+.dashboard-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.dashboard__user-avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 60px;
+}
+
+.dashboard__user-panel-data {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.dashboard__user-information {
+    margin-left: 14px;
+}
+
+.dashboard__user-panel-quick-stats {
+    align-items: center;
+    display: flex;
+    gap: 14px;
+}
+
+.dashboard__user-panel-quick-stat {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.discovery-view__project-card-avatar {
+    border-radius: 100%;
+    overflow: hidden;
+    width: 36px;
+}
