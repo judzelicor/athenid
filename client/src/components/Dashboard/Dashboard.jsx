@@ -6,7 +6,6 @@ import {
 } from '../../components'
 
 import useActiveView from '../../store/useActiveView'
-import useProjects from '../../store/useProjects'
 
 export default function Dashboard() {
     const {activeView, changeActiveView} = useActiveView()

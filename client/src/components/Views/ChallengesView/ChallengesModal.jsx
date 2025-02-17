@@ -143,7 +143,7 @@ export default function ChallengesModal({ focusedChallengeCard, setFocusedChalle
                             <p>Need help?</p>
                         </div>
                         <div>
-                            <button className={styles['modal-window-sec-btn']} onClick={() => startSolo(focusedChallengeCard)}>Start solo</button>
+                            <button className={styles['modal-window-sec-btn']} onClick={() => startSolo(focusedChallengeCard)}>Start</button>
                             <button className={styles['modal-window-pri-btn']} onClick={() => findCollaborators(focusedChallengeCard)}>Find collaborators</button>
                         </div>
                     </div>

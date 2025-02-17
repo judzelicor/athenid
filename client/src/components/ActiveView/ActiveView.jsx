@@ -3,13 +3,15 @@ import {
     FeedView, 
     ChallengesView,
     SettingsView,
-    UserProjectsView
+    UserProjectsView,
+    ProjectsView
 } from '../Views'
 import useProjects from '../../store/useProjects'
-import { useEffect } from 'react'
+import { act, useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
 
 export default function ({ activeView }) {
+    console.log(activeView)
     const { projects, setProjects } = useProjects()
 
     useEffect(() => {
@@ -21,7 +23,7 @@ export default function ({ activeView }) {
         }
 
         fetchProjects()
-    }, [projects, setProjects])
+    }, [])
     
 
     if (activeView === '/feed') {
@@ -62,6 +64,14 @@ export default function ({ activeView }) {
         return (
             <>
                 <SettingsView />
+            </>
+        )
+    }
+
+    else if (activeView == '/projects') {
+        return (
+            <>
+                <ProjectsView />
             </>
         )
     }

@@ -1,0 +1,82 @@
+.in-progress-projects {
+    background-color: #F3F5F7;
+    border-radius: 16px;
+    padding: 25px;
+}
+
+.project-group-title {
+    font-size: 12px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #6c757d;
+}
+
+.projects-group-count-indicator {
+    background-color: #dee2e6;
+    width: fit-content;
+    padding: 0 7px;
+    color: #6c757d;
+    font-size: 11px;
+    font-weight: 800;
+    border-radius: 3px;
+}
+
+.project-group-header {
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-bottom: 25px;
+}
+
+.project-group-project-card {
+    background-color: #fff;
+    border-radius: 16px;
+    padding: 25px;
+    border: 1px solid #dee2e6;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 22px 42px 0px, rgba(0, 0, 0, 0.016) 0px 14.2593px 24.5972px 0px, rgba(0, 0, 0, 0.01) 0px 8.47407px 13.3778px 0px, rgba(0, 0, 0, 0.01) 0px 4.4px 6.825px 0px, rgba(0, 0, 0, 0.008) 0px 1.79259px 3.42222px 0px, rgba(0, 0, 0, 0.004) 0px 0.407407px 1.65278px 0px;
+    margin-bottom: 25px;
+}
+
+.project-pane {
+    position: fixed;
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    box-shadow: rgba(0, 0, 0, 0.02) 0px 22px 42px 0px, rgba(0, 0, 0, 0.016) 0px 14.2593px 24.5972px 0px, rgba(0, 0, 0, 0.01) 0px 8.47407px 13.3778px 0px, rgba(0, 0, 0, 0.01) 0px 4.4px 6.825px 0px, rgba(0, 0, 0, 0.008) 0px 1.79259px 3.42222px 0px, rgba(0, 0, 0, 0.004) 0px 0.407407px 1.65278px 0px;
+    height: 100vh;
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    padding: 25px;
+    right: -100%;
+    width: 720px;
+}
+
+.project-card-button-end {
+    background-color: #fc4f59;
+    font-size: 11px;
+    color: #F3F5F7;
+    padding: 3px 7px;
+    border-radius: 5px;
+    text-transform: capitalize;
+    margin-right: 7px;
+}
+
+.project-card-button-view {
+    background-color: #adb5bd;
+    font-size: 11px;
+    color: #F3F5F7;
+    padding: 3px 7px;
+    border-radius: 5px;
+    text-transform: capitalize;
+}
+
+.minimize-pane-icon {
+    width: 16px;
+    fill: #6c757d;
+    position: absolute;
+    top: 25px;
+    right: 25px;
+    font-size: 12px;
+    font-weight: 700;
+    color: #6c757d;
+    cursor: pointer;
+}

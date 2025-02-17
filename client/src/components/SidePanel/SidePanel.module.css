@@ -1,6 +1,8 @@
 .sidepanel-container {
     border-right: 1px solid #e9ecef;
     height: 100vh;
+    position: fixed;
+    width: 300px;
 }
 
 .sidepanel-option {
@@ -39,5 +41,6 @@
 }
 
 .logo {
-    width: 150px;
+    width: 180px;
+    padding-top: 25px;
 }

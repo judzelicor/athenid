@@ -68,7 +68,7 @@ export default function ChallengesView() {
 
     return (
         <>
-            <div>
+            <div style={{padding: '25px'}}>
                 {
                     focusedChallengeCard.title ?
                     <ChallengesModal 
@@ -84,22 +84,26 @@ export default function ChallengesView() {
                                 return (
                                     <>
                                         <li>
-                                            <div>
-                                                <div>
-                                                    <h3>{ weeklyChallenge.title }</h3>
-                                                    <p>{ weeklyChallenge.description }</p>
-                                                </div>
-                                                <div>
-                                                    <div className={styles['weeklychallenges-card-dif-icon']}>
-                                                        { weeklyChallenge.difficulty === 'beginner' && <BeginnerDifIcon /> }
-                                                        { weeklyChallenge.difficulty === 'intermediate' && <IntermediateDifIcon /> }
-                                                        { weeklyChallenge.difficulty === 'advanced' && <AdvancedDifIcon /> }
+                                            <div className={styles['challenges-card']}>
+                                                <div className={styles['challenge-card-header']}>
+                                                    <h3 className={styles['challenge-card-title']}>{ weeklyChallenge.title }</h3>
+                                                    <div className={styles['challenge-card-metadata']}>
+                                                        <div className={styles['challenge-card-dif-info']}>
+                                                            <div className={styles['weeklychallenges-card-dif-icon']}>
+                                                                { weeklyChallenge.difficulty === 'beginner' && <BeginnerDifIcon /> }
+                                                                { weeklyChallenge.difficulty === 'intermediate' && <IntermediateDifIcon /> }
+                                                                { weeklyChallenge.difficulty === 'advanced' && <AdvancedDifIcon /> }
+                                                            </div>
+                                                            <p className={styles['weeklychallenges-card-dif-level']}>{ weeklyChallenge.difficulty }</p>
+                                                        </div>
+                                                        <div className={styles['challenge-card-participants-info']}>
+                                                            <p>Participants:</p>
+                                                            <p>{ weeklyChallenge.participant_count }</p>
+                                                        </div>
                                                     </div>
-                                                    <p className={styles['weeklychallenges-card-dif-level']}>{ weeklyChallenge.difficulty }</p>
                                                 </div>
                                                 <div>
-                                                    <p>Participants:</p>
-                                                    <p>{ weeklyChallenge.participant_count }</p>
+                                                    <p>{ weeklyChallenge.description }</p>
                                                 </div>
                                                 <div>
                                                     <button

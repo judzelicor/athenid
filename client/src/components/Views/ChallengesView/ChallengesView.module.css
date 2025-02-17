@@ -22,12 +22,13 @@
 }
 
 .challenge-card-interested-btn {
-    background-color: #005bbf;
+    background-color: #00a3dd;
     color: #f2f1f7;
     padding: 0.5rem 1rem;
-    font-size: 1.2rem;
+    font-size: 0.85rem;
     border-radius: 5px;
     transition: transform 50ms ease-in-out;
+    margin-top: 1rem;
 }
 
 .challenge-card-interested-btn:active {
@@ -115,4 +116,40 @@
     padding: 3px 7px;
     border-radius: 20px;
     font-size: 14px;
+}
+
+.challenges-card {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+    border-radius: 19px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dee2e6;
+}
+
+.challenge-card-metadata {
+    font-size: 14px;
+    color: #adb5bd;
+    display: flex;
+    gap: 1rem;
+}
+
+.challenge-card-dif-info {
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.challenge-card-participants-info {
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.challenge-card-title {
+    font-size: 1.5rem;
+    font-weight: 800;
+}
+
+.challenge-card-header {
+    margin-bottom: 1rem;
 }
