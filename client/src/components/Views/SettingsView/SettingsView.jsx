@@ -1,5 +1,6 @@
 import { useDropzone } from 'react-dropzone'
 import { useState } from 'react'
+import axios from 'axios'
 import styles from './SettingsView.module.css'
 
 export default function SettingView() {
@@ -7,7 +8,10 @@ export default function SettingView() {
 
     // Dropzone configuration
     const { getRootProps, getInputProps, isDragActive } = useDropzone({
-        accept: { "application/pdf": [] },
+        accept: { 
+            'application/pdf': [],
+            'image/png': []
+        },
         maxFiles: 1,
         onDrop: (acceptedFiles) => {
             if (acceptedFiles.length > 0) {

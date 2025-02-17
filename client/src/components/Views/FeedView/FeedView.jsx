@@ -1,7 +1,7 @@
 export default function () {
     return (
         <>
-            <h2>This is the feed view</h2>
+            <h2>Welcome back, Daisuke!</h2>
         </>
     )
 }

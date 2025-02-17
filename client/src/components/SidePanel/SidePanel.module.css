@@ -1,0 +1,43 @@
+.sidepanel-container {
+    border-right: 1px solid #e9ecef;
+    height: 100vh;
+}
+
+.sidepanel-option {
+    align-items: center;
+    display: flex;
+    gap: 16px;
+    font-weight: 600;
+    padding: 0.75rem 1rem;
+    width: 100%;
+}
+
+.sidepanel-button {
+    width: 100%;
+}
+
+.sidepanel-option-icon {
+    fill: #212529;
+}
+
+.sidepanel-option {
+    transition: fill 250ms ease, transform 250ms ease;
+}
+
+.sidepanel-button:hover {
+    background-color: #00a3dd;
+    color: #e9ecef;
+    transition: transform 250ms ease, color 500ms ease, background-color 250ms ease;
+}
+
+.sidepanel-button:hover .sidepanel-option {
+    transform: translateX(14px);
+}
+
+.sidepanel-option:hover .sidepanel-option-icon {
+    fill: #e9ecef;
+}
+
+.logo {
+    width: 150px;
+}

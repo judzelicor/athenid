@@ -10,7 +10,18 @@ const app = express()
 
 app.use(cors())
 
-const upload = multer({dest: 'uploads/'})
+const upload = multer({
+    dest: 'uploads/',
+    fileFilter: (req, file, cb) => {
+        const allowedTypes = ['application/pdf', 'image/png']
+
+        if (!allowedTypes.includes(file.mimetype)) {
+            return cb(new Error('The file received is not in a valid format'), false)
+        }
+
+        cb(null, true)
+    }
+})
 
 app.post('/upload-resume', upload.single('resume'), async (req, res) => {
     console.log("REACHED!")
@@ -20,14 +31,29 @@ app.post('/upload-resume', upload.single('resume'), async (req, res) => {
             return res.status(400).json({error: 'No valid resume was uploaded'})
         }
 
-        const formData = new FormData()
-        formData.append('resume', fs.createReadStream(req.file.path))
+        const filePath = req.file.path
+        const fileType = req.file.mimetype
 
-        const response = await axios.post('http://localhost:8000/extract_resume_data', formData, {
+        const formData = new FormData()
+        
+        // Branch depending on file type
+        let APIEndpoint = ''
+        
+        console.log(fileType)
+        
+        if (fileType === 'application/pdf') {
+            APIEndpoint = 'http://localhost:8000/extract_resume_data'
+            formData.append('resume', fs.createReadStream(filePath))
+        } else if (fileType === 'image/png') {
+            APIEndpoint = 'http://localhost:8000/extract_image_data'
+            formData.append('file', fs.createReadStream(filePath))
+        }
+
+        const response = await axios.post(APIEndpoint, formData, {
             headers: formData.getHeaders()
         })
 
-        fs.unlinkSync(req.file.path)
+        fs.unlinkSync(filePath)
 
         console.log(response.data)
 

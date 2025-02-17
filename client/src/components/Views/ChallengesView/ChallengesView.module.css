@@ -1,7 +1,9 @@
 .modal-window {
     background-color: #f2f1f7;
-    padding: 50px;
-    width: 80vw;
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;;
+    width: 45vw;
+    min-width: 450px;
+    max-width: 720px;
     position: fixed;
     top: 20%;
     left: 50%;
@@ -12,7 +14,7 @@
 }
 
 .weeklychallenges-card-dif-icon {
-    width: 16px;
+    width: 12px;
 }
 
 .weeklychallenges-card-dif-level {
@@ -53,7 +55,64 @@
 }
 
 .modal-window-sec-btn {
-    border: 1px solid #ccc;
+    border: 1px solid #dee2e6;
     border-radius: 9px;
     padding: 0.85rem 2rem;
+    margin-right: 1rem;
+}
+
+.modal-wrapper {
+    background: linear-gradient(0deg, rgba(233,236,239,0) 0%, rgba(233,236,239,1) 100%);
+    border-radius: 1rem;
+    border: 1px solid #dee2e6;
+}
+
+.modal-footer {
+    padding: 25px;
+    border-top: 1px solid #ced4da;
+}
+
+.modal-footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.modal-body {
+    padding: 25px;
+}
+
+.active-participants-icon {
+    background-color: #00B760;
+    border-radius: 100%;
+    height: 9px;
+    width: 9px;
+}
+
+.participant-info {
+    align-items: center;
+    display: flex;
+    color: #adb5bd;
+    gap: 7px;
+}
+
+.judz-difficulty-info-div {
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.challenge-tags {
+    align-items: center;
+    display: flex;
+    gap: 7px;
+}
+
+.challenge-tags-pill {
+    text-transform: capitalize;
+    background-color: #ced4da;
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 20px;
+    font-size: 14px;
 }

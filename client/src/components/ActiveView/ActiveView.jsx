@@ -2,7 +2,8 @@ import {
     DiscoveryView,
     FeedView, 
     ChallengesView,
-    SettingsView
+    SettingsView,
+    UserProjectsView
 } from '../Views'
 import useProjects from '../../store/useProjects'
 import { useEffect } from 'react'
@@ -14,7 +15,7 @@ export default function ({ activeView }) {
     useEffect(() => {
         const fetchProjects = async () => {
             const { data, error } = await supabase
-            .from('projects')
+            .from('discovery_projects')
             .select('*, users(*)')
             setProjects(data)
         }
@@ -45,6 +46,14 @@ export default function ({ activeView }) {
         return (
             <>
                 <ChallengesView />
+            </>
+        )
+    }
+
+    else if (activeView == '/user-projects') {
+        return (
+            <>
+                <UserProjectsView />
             </>
         )
     }

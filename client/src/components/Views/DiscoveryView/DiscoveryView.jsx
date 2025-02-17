@@ -5,7 +5,6 @@ export default function DiscoveryView({ projects }) {
 
     return (
         <>
-            <h2>This is the discovery view</h2>
             <div>
                 <button>Post</button>
             </div>

@@ -1,5 +1,4 @@
 import { useForm } from 'react-hook-form'
-import { Select } from '@mantine/core'
 import { supabase } from '../../lib/supabase'
 import { useState } from 'react'
 import { useRouter } from 'next/router'
@@ -119,25 +118,10 @@ export default function () {
                 {/* User role */}
                 <div>
                     <label htmlFor="userRole">What best describes you?</label>
-                    <Select
-                        data={[
-                            {
-                                value: 'student',
-                                label: 'Student'
-                            },
-                            {
-                                value: 'staff',
-                                label: 'Staff'
-                            }
-                        ]}
-                        placeholder='Student'
-                        control={control}
-                        onChange={(_value, option) => {
-                            console.log(option)
-                            setValue('userRole', option.value)
-
-                        }}
-                    />
+                    <select>
+                        <option value="">Student</option>
+                        <option value="">Staff</option>
+                    </select>
                 </div>
                 { 
                 codeIsSent && 
