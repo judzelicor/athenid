@@ -1,4 +1,5 @@
 'use client';
+import '../stylessheets/custom.css'
 
 
 export default function MyApp({ Component, pageProps }) {

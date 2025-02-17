@@ -1,0 +1,14 @@
+.project-specifications-pane p {
+    margin-bottom: 1rem;
+    font-size: 0.85rem;
+}
+
+.project-specifications-pane li {
+    font-size: 0.85rem;
+}
+
+.project-specifications-pane h2 {
+    margin-bottom: 7px;
+    font-size: 1rem;
+    color: #6c757d;
+}

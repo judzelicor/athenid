@@ -51,7 +51,7 @@ export default function ChallengesModal({ focusedChallengeCard, setFocusedChalle
         }, 500)
     }
 
-    const findCollaborators = (challenge) => {
+    const findCollaborators = async (challenge) => {
         gsap.to(modalWindowRef.current, {
             scale: 0.9,
             duration: 0.5,
@@ -64,6 +64,15 @@ export default function ChallengesModal({ focusedChallengeCard, setFocusedChalle
             duration: 0.2,
             ease: 'expo.inOut'
         })
+
+        const {data, error} = await supabase
+        .from('pending_projects')
+        .insert([
+            {
+                user_id: '33b25059-a0a3-4be8-ae22-4d3a580d9429',
+                project_id: challenge.id,
+            }
+        ])
 
         setTimeout(() => {
             setFocusedChallengeCard({})

@@ -27,9 +27,9 @@
 }
 
 .sidepanel-button:hover {
-    background-color: #00a3dd;
+    background-color: #f6bd60;
     color: #e9ecef;
-    transition: transform 250ms ease, color 500ms ease, background-color 250ms ease;
+    transition: transform 250ms ease, color 250ms ease, background-color 250ms ease;
 }
 
 .sidepanel-button:hover .sidepanel-option {

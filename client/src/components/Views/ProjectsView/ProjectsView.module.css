@@ -2,20 +2,21 @@
     background-color: #F3F5F7;
     border-radius: 16px;
     padding: 25px;
+    margin-bottom: 25px;
 }
 
 .project-group-title {
     font-size: 12px;
     font-weight: 800;
     text-transform: uppercase;
-    color: #6c757d;
+    color: #adb5bd;
 }
 
 .projects-group-count-indicator {
     background-color: #dee2e6;
     width: fit-content;
     padding: 0 7px;
-    color: #6c757d;
+    color: #adb5bd;
     font-size: 11px;
     font-weight: 800;
     border-radius: 3px;
@@ -79,4 +80,18 @@
     font-weight: 700;
     color: #6c757d;
     cursor: pointer;
+}
+
+.project-pane-title {
+    background-color: #F3F5F7;
+    padding: 14px;
+    border-radius: 14px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.pending-projects {
+    background-color: #F3F5F7;
+    border-radius: 16px;
+    padding: 25px;
 }

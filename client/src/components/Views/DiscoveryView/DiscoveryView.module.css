@@ -1,0 +1,65 @@
+.discovery-hub-project-card {
+    box-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 20px 25px -5px, rgba(0, 0, 0, 0.1) 0px 8px 10px -6px;
+    border-radius: 19px;
+    padding: 25px;
+    margin-bottom: 25px;
+    border: 1px solid #dee2e6;
+}
+
+.discovery-hub-project-card-title {
+    font-size: 1.5rem;
+    color: #495057;
+    border-radius: 9px;
+}
+
+.metablib-header {
+    font-size: 12px;
+    color: #495057;
+    background-color: #dee2e6;
+    width: fit-content;
+    padding: 3px 7px;
+    border-radius: 7px;
+}
+
+.discovery-project-card-author {
+    align-items: center;
+    font-size: 14px;
+    display: flex;
+    gap: 7px;
+}
+
+.discovery-project-body {
+    margin: 3px 0 1rem 0;
+}
+
+.discovery-project-apply-btn {
+    background-color: #f6bd60;
+    padding: 7px 1rem;
+    font-size: 12px;
+    border-radius: 7px;
+    color: #f8f9fa;
+    margin-top: 25px;
+}
+
+.discovery-hub-card-header {
+    align-items: flex-start;
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.team-icon {
+    width: 16px;
+    display: inline-block;
+    margin-right: 4px;
+    fill: #adb5bd;
+}
+
+.team-size-count {
+    color: #adb5bd;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.project-title {
+    margin-right: 10px;
+}

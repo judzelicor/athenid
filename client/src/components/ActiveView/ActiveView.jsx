@@ -7,7 +7,7 @@ import {
     ProjectsView
 } from '../Views'
 import useProjects from '../../store/useProjects'
-import { act, useEffect } from 'react'
+import { useEffect } from 'react'
 import { supabase } from '../../lib/supabase'
 
 export default function ({ activeView }) {

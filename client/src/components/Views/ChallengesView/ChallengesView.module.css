@@ -22,7 +22,7 @@
 }
 
 .challenge-card-interested-btn {
-    background-color: #00a3dd;
+    background-color: #f6bd60;
     color: #f2f1f7;
     padding: 0.5rem 1rem;
     font-size: 0.85rem;
@@ -48,8 +48,7 @@
 }
 
 .modal-window-pri-btn {
-    background: -webkit-linear-gradient(to right, #00c6ff, #0072ff); /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #00c6ff, #0072ff);
+    background-color: #f6bd60;
     border-radius: 9px;
     color: #f2f1f7;
     padding: 0.85rem 2rem;

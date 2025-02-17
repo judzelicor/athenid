@@ -3,6 +3,8 @@ import gsap from 'gsap'
 import { useEffect, useRef } from 'react'
 import styles from './ProjectsView.module.css'
 import CloseIcon from '../../../assets/close-icon.svg'
+import ReactMarkdown from 'react-markdown'
+import remarkGfm from 'remark-gfm'
 
 export default function ProjectPane({ project, setOpenPaneWithProject }) {
     const projectsViewPaneRef = useRef()
@@ -31,9 +33,12 @@ export default function ProjectPane({ project, setOpenPaneWithProject }) {
     return (
         <>
             <div className={styles['project-pane']} ref={projectsViewPaneRef}>
-                <h2>{ project.title }</h2>
+                <h2 className={styles['project-pane-title']}>{ project.title }</h2>
                 <div onClick={closePane} className={styles['minimize-pane-icon']}>
                     <CloseIcon />
+                </div>
+                <div className='project-specifications-pane'>
+                    <ReactMarkdown remarkPlugins={[remarkGfm]}>{project.specifications}</ReactMarkdown>
                 </div>
             </div>
         </>
