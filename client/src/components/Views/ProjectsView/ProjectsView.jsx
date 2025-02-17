@@ -50,20 +50,49 @@ export default function ProjectsView() {
         fetchUserPendingProjects()
     }
 
+    const postProject = async (e) => {
+        e.preventDefault()
+        const {data, error} = await supabase
+        .from('discovery_projects')
+        .insert([
+            {
+                title: document.querySelector('#projectTitle').value,
+                metablib: document.querySelector('#projectDescription').value,
+                author_id: '33b25059-a0a3-4be8-ae22-4d3a580d9429'
+            }
+        ])
+
+        const { data2, error2 } = await supabase
+        .from('pending_projects')
+        .insert([
+            {
+                user_id: '33b25059-a0a3-4be8-ae22-4d3a580d9429',
+                project_id: '798c4518-1a10-476b-9323-844540e60519',
+            }
+        ])
+
+        fetchUserPendingProjects()
+
+    }
+
 
     return (
         <>
             <div style={{margin: '25px'}}>
                 <h2>Projects</h2>
-                <div>
-                    <h3>Start a project</h3>
-                    <form>
-                        <div>
+                <div style={{marginBottom: '1rem'}}>
+                    <h3 className={styles['start-project-header']}>Start a project</h3>
+                    <form className={styles['post-project-form']}>
+                        <div className={styles['form-group']}>
                             <label htmlFor="">Title</label>
-                            <input type="text" />
+                            <input id='projectTitle' type="text" />
+                        </div>
+                        <div className={styles['form-group']}>
+                            <label htmlFor="">Description</label>
+                            <input id='projectDescription' type="text" />
                         </div>
                         <div>
-                            <button>Post</button>
+                            <button onClick={postProject} className={styles['post-btn']}>Post</button>
                         </div>
                     </form>
                 </div>

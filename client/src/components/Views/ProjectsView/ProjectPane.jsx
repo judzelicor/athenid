@@ -40,6 +40,19 @@ export default function ProjectPane({ project, setOpenPaneWithProject }) {
                 <div className='project-specifications-pane'>
                     <ReactMarkdown remarkPlugins={[remarkGfm]}>{project.specifications}</ReactMarkdown>
                 </div>
+                <div>
+                    <div className={styles['updates-header']}>
+                        Updates
+                    </div>
+                    <div className={styles['updates-container']}>
+                        <div className={styles['empty-updates']}>
+                            <img src="images/404-not-found.png" alt="" />
+                        </div>
+                        <div>
+                            No updates yet :(
+                        </div>
+                    </div>
+                </div>
             </div>
         </>
     )

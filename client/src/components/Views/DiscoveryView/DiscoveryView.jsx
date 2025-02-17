@@ -4,7 +4,7 @@ import TeamIcon from '../../../assets/team-icon.svg'
 import styles from './DiscoveryView.module.css'
 
 export default function DiscoveryView({ projects }) {
-
+    console.log(projects)
     return (
         <>
         <div style={{margin: '25px'}}>
@@ -29,11 +29,11 @@ export default function DiscoveryView({ projects }) {
                                     </div>
                                     <div className={styles['discovery-project-card-author']}>
                                         <div className='discovery-view__project-card-avatar'>
-                                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCEFNrQp6RPluWbWC-7ElivFMesDdEYbCQ4A&s" alt="" />
+                                            <img src={`${project.users.avatar}`} alt="" />
                                         </div>
                                         <div>{project.users.full_name}</div>
                                     </div>
-                                    <button className={styles['discovery-project-apply-btn']}>Apply</button>
+                                    { '33b25059-a0a3-4be8-ae22-4d3a580d9429' != project.users.id && <button className={styles['discovery-project-apply-btn']}>Apply</button> }
                                 </div>
                             </>
                         )
