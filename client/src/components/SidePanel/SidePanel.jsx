@@ -47,7 +47,7 @@ export default function ({ activeView, changeActiveView }) {
                                     <span style={{fontSize: '12px'}}>Following</span>
                                 </div>
                                 <div className="dashboard__user-panel-quick-stat">
-                                    <span>3</span>
+                                    <span>0</span>
                                     <span style={{fontSize: '12px'}}>Projects</span>
                                 </div>
                             </div>

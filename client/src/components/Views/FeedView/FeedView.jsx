@@ -13,7 +13,7 @@ export default function () {
                         </div>
                     </div>
                     <div className={styles['feed-card']}>
-                        <div>1</div>
+                        <div>0</div>
                         <div>
                             Ongoing Projects
                         </div>
